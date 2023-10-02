@@ -1,0 +1,165 @@
+:root {
+    --CORNFLOWER: #E7E9FC;
+    --IRIS: #4D5AE5;
+    --NAVY-BLUE: #2E2F42;
+    --SLATE: #434455;
+    --WHITE: #FFFFFF;
+    --CLOUD: #F4F4FD;
+    --OCEAN: #404BBF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--SLATE);
+    background-color: var(--WHITE);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--NAVY-BLUE);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--OCEAN);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: var(--IRIS);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.studio-header {
+    color: var(--NAVY-BLUE);
+}
+
+.list {
+    list-style-type: none;
+}
+
+.menu {
+    color: var(--NAVY-BLUE);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-link {
+    color: var(--SLATE);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--OCEAN);
+}
+
+.heading-first {
+    color: var(--WHITE);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+
+.heading-second {
+    color: var(--NAVY-BLUE);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.heading-third {
+    color: var(--NAVY-BLUE);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.paragraf {
+    color: var(--SLATE);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.our-team {
+    background-color: var(--CLOUD);
+}
+
+.cards {
+    background-color: var(--WHITE);
+}
+
+.main-view {
+    background-color: var(--NAVY-BLUE);
+}
+
+.button-add {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--CLOUD);
+    color: var(--IRIS);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.button-add:hover,
+.button-add:focus {
+    color: var(--WHITE);
+    background-color: var(--OCEAN);
+}
+
+.button-main {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--IRIS);
+    color: var(--WHITE);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.button-main:hover,
+.button-main:focus {
+    background-color: var(--OCEAN);
+}
+
+.footer {
+    background-color: var(--NAVY-BLUE);
+    color: var(--CLOUD);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.studio-footer {
+    color: var(--CLOUD);
+}
