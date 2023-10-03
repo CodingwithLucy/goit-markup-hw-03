@@ -127,7 +127,7 @@ ul {
     color: var(--OCEAN);
 }
 
-h1 {
+.heading-first {
     color: var(--WHITE);
     text-align: center;
     font-size: 56px;
@@ -159,7 +159,7 @@ h1 {
     margin-bottom: 72px;
 }
 
-h3 {
+.heading-third {
     color: var(--NAVY-BLUE);
     font-size: 20px;
     font-weight: 500;
