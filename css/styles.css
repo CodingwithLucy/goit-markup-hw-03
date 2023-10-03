@@ -14,6 +14,40 @@ body {
     background-color: var(--WHITE);
 }
 
+.section {
+    padding: 120px 0;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid var(--CORNFLOWER);
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.list-menu {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 24px;
+}
+
+.list-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 24px;
+}
+
 .link {
     text-decoration: none;
     color: var(--NAVY-BLUE);
@@ -37,14 +71,26 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .studio-header {
     color: var(--NAVY-BLUE);
 }
 
-.list {
+ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    margin-right: 24px;
+}
+  
+.list-item:last-child {
+    margin-right: 0;
 }
 
 .menu {
@@ -73,7 +119,7 @@ body {
     color: var(--OCEAN);
 }
 
-.heading-first {
+h1 {
     color: var(--WHITE);
     text-align: center;
     font-size: 56px;
@@ -82,7 +128,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.heading-second {
+h2 {
     color: var(--NAVY-BLUE);
     text-align: center;
     font-size: 36px;
@@ -90,22 +136,26 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 72px;
 }
 
-.heading-third {
+h3 {
     color: var(--NAVY-BLUE);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin: 0;
 }
 
-.paragraf {
+p {
     color: var(--SLATE);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 8px 0 0 0;
 }
 
 .our-team {
@@ -116,25 +166,22 @@ body {
     background-color: var(--WHITE);
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid var(--CORNFLOWER);
+    border-bottom: 1px solid var(--CORNFLOWER);
+    border-right: 1px solid var(--CORNFLOWER);
+    padding: 32px 0;
+}
+
+img {
+    display: block;
+}
+
 .main-view {
     background-color: var(--NAVY-BLUE);
-}
-
-.button-add {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--CLOUD);
-    color: var(--IRIS);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-}
-
-.button-add:hover,
-.button-add:focus {
-    color: var(--WHITE);
-    background-color: var(--OCEAN);
 }
 
 .button-main {
@@ -146,6 +193,11 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .button-main:hover,
@@ -153,13 +205,71 @@ body {
     background-color: var(--OCEAN);
 }
 
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;;
+    padding-bottom: 72px;
+}
+
+.button-add {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--CLOUD);
+    color: var(--IRIS);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-add:hover,
+.button-add:focus {
+    color: var(--WHITE);
+    background-color: var(--OCEAN);
+}
+
+.examples {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.list-item .examples {
+    display: flex;
+}
+
+.example {
+    border-left: 1px solid var(--CORNFLOWER);
+    border-bottom: 1px solid var(--CORNFLOWER);
+    border-right: 1px solid var(--CORNFLOWER);
+    padding: 32px 16px;
+}
+
 .footer {
     background-color: var(--NAVY-BLUE);
     color: var(--CLOUD);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 100px 0;
 }
 
-.studio-footer {
+.studio-footer,
+.text-footer {
     color: var(--CLOUD);
+    margin-top: 17.5px;
+}
+
+.text-footer {
+    width: 264px;
+}
+
+.none {
+    display: none;
 }
