@@ -21,7 +21,15 @@ body {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header {
@@ -31,12 +39,6 @@ body {
 .navigation {
     display: flex;
     align-items: center;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 0;
 }
 
 .list-menu {
@@ -93,10 +95,6 @@ ul {
 
 .list-item-adv {
     width: calc((100% - 72px) / 4);
-}
-  
-.list-item:last-child {
-    margin-right: 0;
 }
 
 .menu {
@@ -164,16 +162,17 @@ ul {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 0;
     margin-bottom: 8px;
 }
 
-p {
+.paragraph {
     color: var(--SLATE);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 .our-team {
@@ -198,9 +197,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-left: 1px solid var(--CORNFLOWER);
-    border-bottom: 1px solid var(--CORNFLOWER);
-    border-right: 1px solid var(--CORNFLOWER);
+    border: 1px solid var(--CORNFLOWER);
+    border-top: none;
     padding: 32px 0;
 }
 
@@ -288,11 +286,9 @@ img {
 }
 
 .example {
-    border-left: 1px solid var(--CORNFLOWER);
-    border-bottom: 1px solid var(--CORNFLOWER);
-    border-right: 1px solid var(--CORNFLOWER);
-    padding: 32px 16px;
-    margin-bottom: 8px;
+    border: 1px solid var(--CORNFLOWER);
+    border-top: none;
+    padding: 32px 32px;
 }
 
 .footer {
@@ -314,14 +310,17 @@ img {
 }
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
     position: absolute;
-    white-space: nowrap;
     width: 1px;
-}
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .link-footer {
     display: inline-block;
