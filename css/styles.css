@@ -21,15 +21,14 @@ body {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    height: 72px;
+    align-items: center;
 }
 
 .header {
@@ -144,7 +143,7 @@ ul {
     width: calc((100% - 48px) / 3);
 }
 
-.header-second {
+.heading-second {
     color: var(--NAVY-BLUE);
     text-align: center;
     font-size: 36px;
@@ -288,7 +287,7 @@ img {
 .example {
     border: 1px solid var(--CORNFLOWER);
     border-top: none;
-    padding: 32px 32px;
+    padding: 32px 16px;
 }
 
 .footer {
