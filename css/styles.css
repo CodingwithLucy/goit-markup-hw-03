@@ -18,6 +18,10 @@ body {
     padding: 120px 0;
 }
 
+.section.advantages {
+    padding: 120px 0 0 0;
+}
+
 .container {
     width: 1158px;
     margin: 0 auto;
